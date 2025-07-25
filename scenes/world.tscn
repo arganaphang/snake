@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://di4xrgs37xd4n"]
+
+[ext_resource type="Script" uid="uid://hnovb75txm0m" path="res://scripts/grid.gd" id="1_nnsk1"]
+[ext_resource type="Script" uid="uid://dhojhtb8cjr5p" path="res://scripts/snake.gd" id="2_rwgxs"]
+[ext_resource type="Script" uid="uid://bap6sc4x6alva" path="res://scripts/spawner_food.gd" id="3_4wyf3"]
+
+[node name="world" type="Node2D"]
+
+[node name="grid" type="Node2D" parent="."]
+script = ExtResource("1_nnsk1")
+
+[node name="snake" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_rwgxs")
+
+[node name="spawner_food" type="Node2D" parent="."]
+script = ExtResource("3_4wyf3")
